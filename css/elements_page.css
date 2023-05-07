@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #6c757d;
+    transition: all 0.5s;
+}
+
+a:hover{
+    color: #fb811e;
+}
+
+h5{
+    color: #fb811e;
+    font-weight: bold;
+}
+
+h4{
+    font-weight: bold;
+}
+
+.elements_title h3{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.btn-primary{
+    background-color: #fb811e;
+    border: none;
+    transition: all 0.5s;
+}
+
+.btn-primary:hover {
+    background-color: #009f4d !important
+}
+
+.btn-link {
+    font-weight: 400;
+    color: #ff4c4c;
+    text-decoration: none;
+}
+
+.example{
+    background-color: white;
+    padding: 2rem;
+    border-width: 0.2rem;
+    border: solid #fafafa;
+    margin-top: 1rem;
+}
+
+.jumbotron{
+    background-color: #fafafa;
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+}
+
+.highlight{
+    background-color: white;
+    padding: 2rem;
+    border-width: 0.2rem;
+    border: solid #fafafa;
+    margin-top: 1rem;
+}
+
+pre{
+    background: #eee;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 0 2rem;
+    text-indent: 1px;
+    font-size: 16px;
+}
+
+.bg-flex{
+    background-color: #fafafa;
+    border: 1px solid #eee;
+}
+
+.bg-flex-item{
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+
+.badge-secondary{
+    background-color:#fb811e;
+    color: #fff;
+}
+
+.list-group-item{
+    background-color: #fafafa;
+}
+
+.list-group-item.active{
+    background-color: #fb811e !important;
+    border: 1px solid #fb811e;
+}
+
+.badge-primary{
+    background-color: #fb811e;
+    color: #fff;
+}
+
+.badge-pill {
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-radius: 10rem;
+}
+
+.table{
+    background-color: #fafafa;
+    border: 1px solid #eee;
+}
+
+.table-striped{
+    background-color: #fafafa;
+    border: 1px solid #eee;
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+
+.form-control{
+    background-color: #fafafa;
+}
+
+.nt{
+    color: #060606
+}
+
+.na{
+    color: #4f9fcf
+}
+
+.s{
+    color: #d44950
+}
+
+.breadcrumb{
+    background-color: #fafafa;
+    padding: 15px 10px;
+}

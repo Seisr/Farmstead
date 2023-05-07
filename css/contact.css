@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: #222222;
+    color: #fff;
+}
+
+.contact-right input, textarea {
+    width: 100%;
+    color:#666;
+    background: transparent;
+    font-size: 15px;
+    padding: 14px;
+    border: 1px solid #666;
+    outline: none;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+
+input:focus {
+    border: 1px solid #fb811e;
+}
+
+textarea:focus{
+    border: 1px solid #fb811e;
+}
+
+.btn-success{
+    background:#fb811e;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.btn-success:hover{
+    background: #009f4d !important;
+}
+
+.contact-left h5{
+    color: #fb811e;
+}
+
+.contact-left h3{
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.contact-left a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.contact-left a:hover{
+    color: #fb811e;
+}
+
+.contact-details i{
+    color: #fb811e;
+}
+
+.contact-right{
+    display: block;
+}
+
