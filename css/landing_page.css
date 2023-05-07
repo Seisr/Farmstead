@@ -33,6 +33,7 @@ h6 {
 p {
   font-size: 17px;
   color: #707070;
+  transition: all 0.5s;
 }
 body {
   scroll-behavior: auto;
@@ -131,6 +132,12 @@ header ul button {
 header ul button i {
   font-size: 30px;
   color: white;
+}
+
+.logo2 {
+  font-size: 30px;
+  color: white;
+  transform: translateY(-7px);
 }
 header ul li {
   text-align: center;
@@ -310,10 +317,6 @@ header ul li:hover a {
   border-radius: 14em;
   padding: 10em;
 }
-.image_right img {
-  border-radius: 4rem;
-  size-adjust: 20%;
-}
 
 .stat_content {
   display: grid;
@@ -359,13 +362,15 @@ header ul li:hover a {
   width: 100%;
 }
 
-/* owl_carousel  */
-.owl_carousel {
-  background-image: url(./../img/about/bg1.jpg);
+/* aboutpagecover */
+
+.AboutPageCover {
+  background: url(./../img/about/bg1.jpg);
+  background-size: cover;
   position: relative;
   z-index: 1;
 }
-.owl_carousel::before {
+.AboutPageCover::before {
   content: "";
   background: rgb(10 10 10 / 52%);
   position: absolute;
@@ -375,24 +380,151 @@ header ul li:hover a {
   right: 0;
   z-index: -1;
 }
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+  display: block;
+}
+.owl-carousel {
+  width: 100%;
+}
 .owl-carousel .owl-stage-outer {
   position: relative;
   overflow: hidden;
 }
-.owl_carousel .item .testi-img {
+.owl-carousel .owl-stage {
+  position: relative;
+  touch-action: manipulation;
+}
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
+  display: none;
+}
+.owl-carousel .owl-item {
+  min-height: 1px;
+  float: left;
+}
+.testimonial-content {
+  max-width: 900px;
+  margin: auto;
+}
+.AboutPageCover .testi-des {
+  text-align: center;
+}
+a.testi-img {
   width: 90px;
   height: 90px;
   display: inline-block;
   overflow: hidden;
-  background: var(--bg-color);
+  background: #fff;
   border-radius: 50%;
 }
-.owl_carousel .item h3 {
+.AboutPageCover .testimonial img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.AboutPageCover .testimonial .peopl {
+  margin: 0;
+}
+.AboutPageCover .testimonial .peopl h3 {
+  margin: 0;
   font-weight: 600;
   font-size: 20px;
   margin: 10px 0 5px;
   color: #fff;
 }
+.AboutPageCover p.identity {
+  color: #fff;
+  font-size: 16px;
+}
+.AboutPageCover span.fa {
+  font-size: 20px;
+  color: #fb811e;
+  font-weight: 600;
+  display: inline-block;
+}
+.fa-quote-left:before {
+  content: "";
+}
+.AboutPageCover blockquote q {
+  font-size: 22px;
+  line-height: 34px;
+  color: #fff;
+  text-indent: 30px;
+  display: block;
+}
+.AboutPageCover .owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 30px;
+  bottom: -90px;
+}
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  background: transparent;
+}
+.AboutPageCover .owl-theme .owl-dots .owl-dot.active span,
+.AboutPageCover .owl-theme .owl-dots .owl-dot:hover span {
+  background: #fb811e;
+  opacity: 1;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  border: none;
+}
+.AboutPageCover span.fa {
+  font-size: 20px;
+  color: #fb811e;
+  font-weight: 600;
+  display: inline-block;
+}
+.AboutPageCover blockquote {
+  margin: 0 0 1rem;
+}
+q::before {
+  content: open-quote;
+}
+q::after {
+  content: close-quote;
+}
+.owl-carousel,
+.owl-carousel .owl-item {
+  position: relative;
+}
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
+  text-align: center;
+}
+.AboutPageCover .owl-dots {
+  position: absolute;
+  left: 0px;
+  right: 0;
+  background: none;
+}
+.w3l-clients-1 .owl-theme .owl-dots .owl-dot span {
+  background: #fff;
+  opacity: 0.3;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 1px;
+  background: #aaa;
+  display: block;
+  transition: opacity 0.2s ease;
+  position: relative;
+  opacity: 0.9;
+  border-radius: 30px;
+}
+#owl-demo2 > div.owl-dots > button {
+  padding: 5px;
+}
+.logo1 {
+  color: #fb811e;
+}
+
+/* team css  */
 /* team css  */
 .team {
   background-color: #009f4d;
@@ -420,11 +552,92 @@ header ul li:hover a {
   padding: 1rem;
   border-radius: 8px;
 }
+.team .team_content .team_bg .team_img {
+  position: relative;
+}
+.team .team_content .team_bg .team_img img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+.team .team_content .team_bg .team_person {
+  position: relative;
+}
 .team .team_content .team_title {
   font-size: 16px;
   text-transform: uppercase;
   margin-top: 1px;
   display: block;
+}
+.team .team_content .team_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  background-color: rgb(8 8 8 / 54%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.team .team_content .team_overlay .top {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(-55%);
+  transition: all 0.3s 0.2s;
+  padding: 0 20px;
+}
+.team .team_content .team_overlay .bot_icons {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  transform: translateY(45%);
+  transition: all 0.3s 0.2s;
+  font-size: 35px;
+}
+.team .team_content .team_overlay .bot_icons i {
+  color: white;
+}
+.team .team_person:hover .team_overlay .top {
+  top: 35%;
+}
+.team .team_person .team_overlay a {
+  transition: all 0.3s;
+}
+.team .team_person .team_overlay a:hover {
+  color: orange;
+}
+.team .team_person .team_overlay i {
+  transition: all 0.3s;
+}
+.team .team_person .team_overlay i:hover {
+  color: orange;
+}
+.team .team_person:hover .team_overlay .bot_icons {
+  bottom: 10%;
+}
+.team .team_person:hover .team_overlay,
+.team .team_person:hover .team_overlay .top,
+.team .team_person:hover .team_overlay .bot_icons {
+  opacity: 1;
+}
+.team .team_person {
+  overflow: hidden;
+}
+.team .team_content .team_overlay .bot_icons a {
+  margin: 0 10px;
+  color: #1e272e;
+  font-size: 16px;
+}
+.team .team_content .team_overlay h4 a {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
 }
 /* map  */
 
@@ -442,8 +655,24 @@ header ul li:hover a {
   padding: 6em 0px;
 }
 
+.git_left_title h3 {
+  color: #fb811e;
+}
+
+.git_left_title h1 {
+  font-weight: bolder;
+}
+
+.git_left_item .logo {
+  color: #fb811e;
+}
+
 .git_right {
   width: 40%;
+}
+
+.git_left_list_item p:hover {
+  color: #fb811e;
 }
 
 .git_right button {

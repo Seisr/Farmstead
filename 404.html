@@ -29,8 +29,81 @@
   </head>
 
   <body>
-    <header>
-      <!-- place navbar here -->
+    <header id="site-header" class="main-header fixed-top nav-fixed">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg stroke">
+          <h2>
+            <a
+              href=""
+              class="text-decoration-none navbar-brand position-relative"
+              >Farmstead <i class="fa-solid fa-leaf"></i
+            ></a>
+          </h2>
+          <div class="navbar ms-lg-auto">
+            <div class="serch ms-lg-3">
+              <form action="" method="get">
+                <input type="search" name="" id="" />
+              </form>
+            </div>
+          </div>
+          <div class="ms-2">
+            <button class="btn" id="switchButton" title="Click to switch theme">
+              <div class="icon">
+                <i class="fa-regular fa-moon"></i>
+                <i class="fa-regular fa-sun"></i>
+              </div>
+            </button>
+          </div>
+          <ul class="list-unstyled">
+            <div class="dropdown">
+              <button
+                class="btn position-absolute"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="icon"><i class="fa-solid fa-bars"></i></div>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a href="./index.html" class="text-decoration-none">Home</a>
+                </li>
+                <li>
+                  <a href="./about.html" class="text-decoration-none">About</a>
+                </li>
+                <li>
+                  <a href="./services.html" class="text-decoration-none"
+                    >Service</a
+                  >
+                </li>
+                <li>
+                  <a href="./blog_posts.html" class="text-decoration-none"
+                    >Blog Posts</a
+                  >
+                </li>
+                <li>
+                  <a href="./landing_page.html" class="text-decoration-none"
+                    >Landing Page</a
+                  >
+                </li>
+                <li>
+                  <a href="./elements_page.html" class="text-decoration-none"
+                    >Element Page</a
+                  >
+                </li>
+                <li>
+                  <a href="./404.html" class="text-decoration-none">404 Page</a>
+                </li>
+                <li>
+                  <a href="./contact.html" class="text-decoration-none"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <div class="container">
@@ -158,5 +231,110 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+    <footer>
+      <section class="footer">
+        <div class="py-5">
+          <div class="container py-4">
+            <div class="row footer-p">
+              <div class="col-lg-4 order-lg-1 order-3 mt-lg-0 mt-5">
+                <h4 class="FooterLogo">
+                  <a class="logo text-decoration-none" href="./index.html"
+                    >Farmstead<i class="fa fa-leaf" aria-hidden="true"></i
+                  ></a>
+                </h4>
+                <p class="mt-3">
+                  Duis imperdiet sapien tortor, vitae congue diam auctor vitae.
+                  Aliquam eget turpis ornare, euismod ligul aeget, enenatis dui.
+                </p>
+                <p class="copy-text mt-5 CopyRights">
+                  &copy; 2023 Farmstead. All Rights Reserved | WordPress Theme
+                  by
+                  <a
+                    class="text-decoration-none text-success"
+                    href="./index.html"
+                    >W3Layouts.
+                  </a>
+                </p>
+              </div>
+
+              <div class="col-lg-4 pl-lg-5 FooterContact">
+                <h3>Find Us</h3>
+                <div class="column-2">
+                  <p>
+                    Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.
+                  </p>
+
+                  <p class="mt-3">
+                    Phone:
+                    <a class="text-decoration-none" href="tel:+12 23456790"
+                      >+12 23456790</a
+                    >
+                  </p>
+
+                  <p class="mt-3">
+                    Email:
+                    <a href="" class="text-decoration-none">info@example.com</a>
+                  </p>
+
+                  <p class="mt-3">
+                    Fax:
+                    <a href="" class="text-decoration-none">+ 11 367 21890</a>
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-7 order-lg-3 order-1 column mt-lg-0 mt-5"
+              >
+                <h3>Newsletter</h3>
+                <div class="end-column FooterSubscribe">
+                  <p>
+                    Subscribe to our mailing list and get updates to your email
+                    inbox.
+                  </p>
+                  <form action="" class="subscribe d-flex mt-3" method="post">
+                    <input
+                      type="email"
+                      name="Email"
+                      placeholder="Email Address"
+                      required=""
+                    />
+                    <button>
+                      <span class="fa fa-paper-plane" aria-hidden="true"></span>
+                    </button>
+                  </form>
+                </div>
+
+                <ul class="social mt-4 pt-2 FooterSocial">
+                  <li>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+
+                  <li>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+
+                  <li>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+
+                  <li>
+                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                  </li>
+
+                  <li>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- backtotop  -->
+      <a href="#" class="cd-top text-replace js-cd-top backtotop"
+        ><i class="fa-solid fa-turn-up"></i
+      ></a>
+    </footer>
   </body>
 </html>
