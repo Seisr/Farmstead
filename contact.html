@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="./css/contact.css" />
   </head>
 
-  <body>
+  <body id="myBody">
     <header id="site-header" class="main-header fixed-top nav-fixed">
       <div class="container">
         <nav class="navbar navbar-expand-lg stroke">
@@ -49,8 +49,10 @@
           </div>
           <div class="ms-2">
             <button class="btn" id="switchButton" title="Click to switch theme">
-              <i class="fa-regular fa-moon"></i>
-              <i class="fa-regular fa-sun"></i>
+              <div class="icon">
+                <i class="fa-regular fa-moon"></i>
+                <i class="fa-regular fa-sun"></i>
+              </div>
             </button>
           </div>
           <ul class="list-unstyled">
@@ -59,8 +61,9 @@
                 class="btn position-absolute"
                 type="button"
                 data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-                <i class="fa-solid fa-bars"></i>
+                <div class="icon"><i class="fa-solid fa-bars"></i></div>
               </button>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li>
@@ -112,7 +115,8 @@
             <ul class="">
               <a class="fw-bold text-decoration-none" href="./index.html"
                 >Home</a
-              ><span> » Contact Page</span>
+              >
+              <span> > Contact Page</span>
             </ul>
           </div>
         </section>
@@ -336,10 +340,6 @@
           </div>
         </div>
       </section>
-      <!-- backtotop  -->
-      <a href="#" class="cd-top text-replace js-cd-top backtotop"
-        ><i class="fa-solid fa-turn-up"></i
-      ></a>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script
@@ -353,5 +353,11 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      document.getElementById("switchButton").onclick = function () {
+        document.getElementById("myBody").classList.toggle("dark");
+      };
+    </script>
   </body>
 </html>

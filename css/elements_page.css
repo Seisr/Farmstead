@@ -1,69 +1,214 @@
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* carousel css  */
-main .carousel {
-  background-image: url(./../img/about/bgcarousel.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  position: relative;
-  z-index: 0;
-}
-.carousel ul {
-  line-height: 1.5;
-  color: #707070;
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 15px;
-  text-transform: capitalize;
-  padding: 0;
-}
-.carousel ul a {
-  color: #707070;
-  transition: all 0.3s;
-}
-.carousel ul a:hover {
-  color: orange;
+.nav-fixed {
+padding: 0px;
+border-bottom: none;
+z-index: 99 !important;
+background-color: transparent;
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+height: 70px;
 }
 
-a {
+header nav h2 .navbar-brand {
+font-size: 32px;
+color: #fb811e;
+transition: all 0.3s;
+}
+header nav h2 .navbar-brand:hover {
+color: black;
+}
+header nav h2 a i {
+position: absolute;
+top: 0;
+right: 90px;
+font-size: 20px;
+}
+header input {
+background: #fff url(./../img/blog_posts/search.png) no-repeat 10px center;
+border: 1px solid #eee;
+padding: 0 10px;
+width: 35px;
+height: 35px;
+border-radius: 50px;
+transition: all 0.5s;
+cursor: pointer;
+}
+header input:focus {
+width: 200px;
+padding-left: 32px;
+color: #000;
+background-color: #fff;
+cursor: auto;
+padding-right: 15px;
+border-color: #eee;
+}
+
+#switchButton {
+background-color: transparent;
+border: none;
+}
+#switchButton .fa-sun {
+display: none;
+font-size: 25px;
+color: white;
+}
+#switchButton .fa-moon {
+display: block;
+font-size: 25px;
+color: white;
+}
+.nav-fixed #switchButton .fa-moon {
+color: black;
+}
+/* Dark Theme*/
+.dark#myBody {
+background-color: #222222;
+color: #eee;
+}
+
+.dark .carousel .w3l-breadcrumb .container{
+background-color: transparent;
+}
+
+.dark pre{
+background-color: #222222;
+}
+
+.dark .jumbotron{
+background-color: #222222;
+}
+
+.dark .breadcrumb{
+background-color: #222222;
+}
+
+.dark div{
+background-color: #222222;
+}
+
+.dark figure{
+background-color: #222222;
+}
+
+.dark .example form{
+background-color: #222222;
+}
+
+.dark #switchButton {
+background-color: transparent;
+border: none;
+}
+.dark .nav-fixed #switchButton .fa-sun {
+color: black;
+}
+.dark #switchButton .fa-sun {
+display: block;
+color: white;
+}
+
+.dark #switchButton .fa-moon {
+display: none;
+}
+header ul button {
+top: -15px;
+}
+header .icon {
+font-size: 30px;
+color: white;
+transform: translateY(-7px);
+}
+
+header .ms-2 .icon {
+font-size: 30px;
+color: white;
+transform: translateY(1px);
+}
+header ul li {
+text-align: center;
+width: 300px;
+height: 50px;
+}
+header ul li a {
+color: black;
+font-size: 18px;
+font-weight: 600;
+text-transform: uppercase;
+}
+
+header ul li:first-of-type a {
+color: #fb811e;
+}
+header ul li:hover a {
+color: #fb811e;
+}
+.nav-fixed .fa-bars {
+color: black;
+}
+
+/* carousel css  */
+main .carousel {
+background-image: url(./../img/about/bgcarousel.png) !important;
+background-repeat: no-repeat;
+background-position: bottom;
+background-size: cover;
+position: relative;
+z-index: 0;
+}
+.carousel ul {
+line-height: 1.5;
+color: #707070;
+position: relative;
+display: inline-block;
+vertical-align: middle;
+font-size: 15px;
+text-transform: capitalize;
+padding: 0;
+}
+.carousel ul a {
+color: #707070;
+transition: all 0.3s;
+}
+.carousel ul a:hover {
+color: #fb811e;
+}
+
+a{
   text-decoration: none;
   color: #6c757d;
   transition: all 0.5s;
 }
 
-a:hover {
+a:hover{
   color: #fb811e;
 }
 
-h5 {
+h5{
   color: #fb811e;
   font-weight: bold;
 }
 
-h4 {
+h4{
   font-weight: bold;
 }
 
-.elements_title h3 {
+.elements_title h3{
   font-size: 40px;
   line-height: 50px;
   font-weight: 600;
 }
 
-.btn-primary {
+.btn-primary{
   background-color: #fb811e;
   border: none;
   transition: all 0.5s;
 }
 
 .btn-primary:hover {
-  background-color: #009f4d !important;
+  background-color: #009f4d !important
 }
 
 .btn-link {
@@ -72,7 +217,7 @@ h4 {
   text-decoration: none;
 }
 
-.example {
+.example{
   background-color: white;
   padding: 2rem;
   border-width: 0.2rem;
@@ -80,14 +225,14 @@ h4 {
   margin-top: 1rem;
 }
 
-.jumbotron {
+.jumbotron{
   background-color: #fafafa;
   padding: 4rem 2rem;
   margin-bottom: 2rem;
   border-radius: 0.3rem;
 }
 
-.highlight {
+.highlight{
   background-color: white;
   padding: 2rem;
   border-width: 0.2rem;
@@ -95,7 +240,7 @@ h4 {
   margin-top: 1rem;
 }
 
-pre {
+pre{
   background: #eee;
   line-height: 1.6;
   margin-bottom: 1.6em;
@@ -106,31 +251,31 @@ pre {
   font-size: 16px;
 }
 
-.bg-flex {
+.bg-flex{
   background-color: #fafafa;
   border: 1px solid #eee;
 }
 
-.bg-flex-item {
+.bg-flex-item{
   background-color: #fff;
   border: 1px solid #eee;
 }
 
-.badge-secondary {
-  background-color: #fb811e;
+.badge-secondary{
+  background-color:#fb811e;
   color: #fff;
 }
 
-.list-group-item {
+.list-group-item{
   background-color: #fafafa;
 }
 
-.list-group-item.active {
+.list-group-item.active{
   background-color: #fb811e !important;
   border: 1px solid #fb811e;
 }
 
-.badge-primary {
+.badge-primary{
   background-color: #fb811e;
   color: #fff;
 }
@@ -141,167 +286,43 @@ pre {
   border-radius: 10rem;
 }
 
-.table {
+.table{
   background-color: #fafafa;
   border: 1px solid #eee;
 }
 
-.table-striped {
+.table-striped{
   background-color: #fafafa;
   border: 1px solid #eee;
 }
 
-.form-group {
+.form-group{
   margin-bottom: 1rem;
 }
 
-.form-control {
+.form-control{
   background-color: #fafafa;
 }
 
-.nt {
-  color: #060606;
+.nt{
+  color: #060606
 }
 
-.na {
-  color: #4f9fcf;
+.na{
+  color: #4f9fcf
 }
 
-.s {
-  color: #d44950;
+.s{
+  color: #d44950
 }
 
-.breadcrumb {
+.breadcrumb{
   background-color: #fafafa;
   padding: 15px 10px;
 }
 
-/* header */
+/* footer css */
 
-.main-header {
-  background-color: transparent;
-  padding: 0px;
-  transition: all 0.4s ease 0s;
-  height: 90px;
-  display: grid;
-  align-items: center;
-}
-.nav-fixed {
-  padding: 0px;
-  border-bottom: none;
-  z-index: 99 !important;
-  background-color: white;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
-  height: 70px;
-}
-
-header nav h2 .navbar-brand {
-  font-size: 32px;
-  color: orange;
-  transition: all 0.3s;
-}
-header nav h2 .navbar-brand:hover {
-  color: black;
-}
-header nav h2 a i {
-  position: absolute;
-  top: 0;
-  right: 90px;
-  font-size: 20px;
-}
-header input {
-  background: #fff url(./../img/blog_posts/search.png) no-repeat 10px center;
-  border: 1px solid #eee;
-  padding: 0 10px;
-  width: 35px;
-  height: 35px;
-  border-radius: 50px;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-header input:focus {
-  width: 200px;
-  padding-left: 32px;
-  color: #000;
-  background-color: #fff;
-  cursor: auto;
-  padding-right: 15px;
-  border-color: #eee;
-}
-
-#switchButton {
-  background-color: transparent;
-  border: none;
-}
-#switchButton .fa-sun {
-  display: none;
-  font-size: 25px;
-  color: white;
-}
-#switchButton .fa-moon {
-  display: block;
-  font-size: 25px;
-  color: white;
-}
-.nav-fixed #switchButton .fa-moon {
-  color: black;
-}
-/* Dark Theme*/
-.dark#myBody {
-  background-color: rgb(70, 66, 66);
-}
-.dark #switchButton {
-  background-color: transparent;
-  border: none;
-}
-.dark .nav-fixed #switchButton .fa-sun {
-  color: black;
-}
-.dark #switchButton .fa-sun {
-  display: block;
-  color: white;
-}
-
-.dark #switchButton .fa-moon {
-  display: none;
-}
-header ul button {
-  top: -15px;
-}
-header .icon {
-  font-size: 30px;
-  color: white;
-  transform: translateY(-7px);
-}
-
-header .ms-2 .icon {
-  font-size: 30px;
-  color: white;
-  transform: translateY(1px);
-}
-header ul li {
-  text-align: center;
-  width: 300px;
-  height: 50px;
-}
-header ul li a {
-  color: black;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-header ul li:first-of-type a {
-  color: orange;
-}
-header ul li:hover a {
-  color: orange;
-}
-.nav-fixed .fa-bars {
-  color: black;
-}
-
-/* footer  */
 .footer h3 {
   font-size: 20px;
   line-height: 25px;

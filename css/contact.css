@@ -1,284 +1,183 @@
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 .nav-fixed {
-  padding: 0px;
-  border-bottom: none;
-  z-index: 99 !important;
-  background-color: transparent;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
-  height: 70px;
+padding: 0px;
+border-bottom: none;
+z-index: 99 !important;
+background-color: transparent;
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+height: 70px;
 }
 
 header nav h2 .navbar-brand {
-  font-size: 32px;
-  color: #fb811e;
-  transition: all 0.3s;
+font-size: 32px;
+color: #fb811e;
+transition: all 0.3s;
 }
 header nav h2 .navbar-brand:hover {
-  color: black;
+color: black;
 }
 header nav h2 a i {
-  position: absolute;
-  top: 0;
-  right: 90px;
-  font-size: 20px;
+position: absolute;
+top: 0;
+right: 90px;
+font-size: 20px;
 }
 header input {
-  background: #fff url(./../img/blog_posts/search.png) no-repeat 10px center;
-  border: 1px solid #eee;
-  padding: 0 10px;
-  width: 35px;
-  height: 35px;
-  border-radius: 50px;
-  transition: all 0.5s;
-  cursor: pointer;
+background: #fff url(./../img/blog_posts/search.png) no-repeat 10px center;
+border: 1px solid #eee;
+padding: 0 10px;
+width: 35px;
+height: 35px;
+border-radius: 50px;
+transition: all 0.5s;
+cursor: pointer;
 }
 header input:focus {
-  width: 200px;
-  padding-left: 32px;
-  color: #000;
-  background-color: #fff;
-  cursor: auto;
-  padding-right: 15px;
-  border-color: #eee;
+width: 200px;
+padding-left: 32px;
+color: #000;
+background-color: #fff;
+cursor: auto;
+padding-right: 15px;
+border-color: #eee;
 }
 
 #switchButton {
-  background-color: transparent;
-  border: none;
+background-color: transparent;
+border: none;
 }
 #switchButton .fa-sun {
-  display: none;
-  font-size: 25px;
-  color: white;
+display: none;
+font-size: 25px;
+color: white;
 }
 #switchButton .fa-moon {
-  display: block;
-  font-size: 25px;
-  color: white;
+display: block;
+font-size: 25px;
+color: white;
 }
 .nav-fixed #switchButton .fa-moon {
-  color: black;
+color: black;
 }
 /* Dark Theme*/
 .dark#myBody {
-  background-color: rgb(70, 66, 66);
+background-color: #222222;
+color: w;
 }
-.dark #switchButton {
-  background-color: transparent;
-  border: none;
-}
-.dark .nav-fixed #switchButton .fa-sun {
-  color: black;
-}
-.dark #switchButton .fa-sun {
-  display: block;
+
+.dark .row .contact-left h3{
   color: white;
 }
 
+.dark .contact-details h6{
+  color: white;
+}
+
+.dark footer p{
+  color: white;
+}
+
+.dark #switchButton {
+background-color: transparent;
+border: none;
+}
+.dark .nav-fixed #switchButton .fa-sun {
+color: black;
+}
+.dark #switchButton .fa-sun {
+display: block;
+color: white;
+}
+
+
+
 .dark #switchButton .fa-moon {
-  display: none;
+display: none;
+color: white;
 }
 header ul button {
-  top: -15px;
+top: -15px;
 }
 header .icon {
-  font-size: 30px;
-  color: white;
-  transform: translateY(-7px);
+font-size: 30px;
+color: white;
+transform: translateY(-7px);
 }
 
 header .ms-2 .icon {
-  font-size: 30px;
-  color: white;
-  transform: translateY(1px);
+font-size: 30px;
+color: white;
+transform: translateY(1px);
 }
 header ul li {
-  text-align: center;
-  width: 300px;
-  height: 50px;
+text-align: center;
+width: 300px;
+height: 50px;
 }
 header ul li a {
-  color: black;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
+color: black;
+font-size: 18px;
+font-weight: 600;
+text-transform: uppercase;
 }
 
 header ul li:first-of-type a {
-  color: #fb811e;
+color: #fb811e;
 }
 header ul li:hover a {
-  color: #fb811e;
+color: #fb811e;
 }
 .nav-fixed .fa-bars {
-  color: black;
+color: black;
+}
+
+main{
+  color: #060606;
 }
 
 /* carousel css  */
 main .carousel {
-  background-image: url(./../img/about/bgcarousel.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  position: relative;
-  z-index: 0;
+background-image: url(./../img/about/bgcarousel.png);
+background-repeat: no-repeat;
+background-position: bottom;
+background-size: cover;
+position: relative;
+z-index: 0;
 }
 .carousel ul {
-  line-height: 1.5;
-  color: #707070;
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 15px;
-  text-transform: capitalize;
-  padding: 0;
+line-height: 1.5;
+color: #707070;
+position: relative;
+display: inline-block;
+vertical-align: middle;
+font-size: 15px;
+text-transform: capitalize;
+padding: 0;
 }
 .carousel ul a {
-  color: #707070;
-  transition: all 0.3s;
+color: #707070;
+transition: all 0.3s;
 }
 .carousel ul a:hover {
-  color: orange;
+color: #fb811e;
 }
 
-/* header*/
-.main-header {
-  background-color: transparent;
-  padding: 0px;
-  transition: all 0.4s ease 0s;
-  height: 90px;
-  display: grid;
-  align-items: center;
-}
-.nav-fixed {
-  padding: 0px;
-  border-bottom: none;
-  z-index: 99 !important;
-  background-color: white;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
-  height: 70px;
+.contact-left h6{
+font-size: 20px;
 }
 
-header nav h2 .navbar-brand {
-  font-size: 32px;
-  color: orange;
-  transition: all 0.3s;
-}
-header nav h2 .navbar-brand:hover {
-  color: black;
-}
-header nav h2 a i {
-  position: absolute;
-  top: 0;
-  right: 90px;
-  font-size: 20px;
-}
-header input {
-  background: #fff url(./../img/blog_posts/search.png) no-repeat 10px center;
-  border: 1px solid #eee;
-  padding: 0 10px;
-  width: 35px;
-  height: 35px;
-  border-radius: 50px;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-header input:focus {
-  width: 200px;
-  padding-left: 32px;
-  color: #000;
-  background-color: #fff;
-  cursor: auto;
-  padding-right: 15px;
-  border-color: #eee;
+.contact-left span{
+color: #707070;
 }
 
-#switchButton {
-  background-color: transparent;
-  border: none;
-}
-#switchButton .fa-sun {
-  display: none;
-  font-size: 25px;
-  color: white;
-}
-#switchButton .fa-moon {
-  display: block;
-  font-size: 25px;
-  color: white;
-}
-.nav-fixed #switchButton .fa-moon {
-  color: black;
-}
-/* Dark Theme*/
-.dark#myBody {
-  background-color: rgb(70, 66, 66);
-}
-.dark #switchButton {
-  background-color: transparent;
-  border: none;
-}
-.dark .nav-fixed #switchButton .fa-sun {
-  color: black;
-}
-.dark #switchButton .fa-sun {
-  display: block;
-  color: white;
-}
-
-.dark #switchButton .fa-moon {
-  display: none;
-}
-header ul button {
-  top: -15px;
-}
-header .icon {
-  font-size: 30px;
-  color: white;
-  transform: translateY(-7px);
-}
-
-header .ms-2 .icon {
-  font-size: 30px;
-  color: white;
-  transform: translateY(1px);
-}
-header ul li {
-  text-align: center;
-  width: 300px;
-  height: 50px;
-}
-header ul li a {
-  color: black;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-header ul li:first-of-type a {
-  color: orange;
-}
-header ul li:hover a {
-  color: orange;
-}
-.nav-fixed .fa-bars {
-  color: black;
-}
-
-main {
-  background-color: #fff;
-  color: black;
-}
-
-.contact-right input,
-textarea {
+.contact-right input, textarea {
   width: 100%;
-  color: #666;
+  color:#666;
   background: transparent;
   font-size: 15px;
   padding: 14px;
@@ -292,12 +191,12 @@ input:focus {
   border: 1px solid #fb811e;
 }
 
-textarea:focus {
+textarea:focus{
   border: 1px solid #fb811e;
 }
 
-.btn-success {
-  background: #fb811e;
+.btn-success{
+  background:#fb811e;
   border: none;
   padding: 12px 30px;
   border-radius: 30px;
@@ -305,38 +204,42 @@ textarea:focus {
   transition: all 0.5s;
 }
 
-.btn-success:hover {
+.btn-success:hover{
   background: #009f4d !important;
 }
 
-.contact-left h5 {
+.contact-left h5{
   color: #fb811e;
 }
 
-.contact-left h3 {
+.contact-left h6{
+  color: #060606;
+}
+
+.contact-left h3{
   font-size: 40px;
   line-height: 50px;
 }
 
-.contact-left a {
+.contact-left a{
   text-decoration: none;
-  color: black;
+  color: #707070;
   transition: all 0.5s;
 }
 
-.contact-left a:hover {
+.contact-left a:hover{
   color: #fb811e;
 }
 
-.contact-details i {
+.contact-details i{
   color: #fb811e;
 }
 
-.contact-right {
+.contact-right{
   display: block;
 }
 
-/* footer  */
+/* footer css */
 
 .footer h3 {
   font-size: 20px;
@@ -438,25 +341,6 @@ textarea:focus {
   line-height: 35px;
 }
 
-@keyframes out {
-  0% {
-    r: 1;
-    opacity: 0.9;
-  }
-  25% {
-    r: 5;
-    opacity: 0.3;
-  }
-  50% {
-    r: 10;
-    opacity: 0.2;
-  }
-  75% {
-    r: 15;
-    opacity: 0.1;
-  }
-  100% {
-    r: 20;
-    opacity: 0;
-  }
+.footer p{
+  color: #060606;
 }
