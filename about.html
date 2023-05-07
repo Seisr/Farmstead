@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>About</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
 
@@ -13,6 +13,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Volkhov:wght@400;700&display=swap"
         rel="stylesheet">
+    <!-- OWL CAROUSEL CSS -->
+    <link rel="stylesheet" href="./js/owl.carousel.js">
+    <!-- countup cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.0/countUp.min.js"
+        integrity="sha512-E0zfDwA1CopT4gzJmj9tMpd7O6pTpuybTK58eY1GwqptdasUohyImuualLt/S5XvM8CDnbaTNP/7MU3bQ5NmQg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- animate cdn  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- magnific-popup -->
@@ -30,8 +36,45 @@
     <link rel="stylesheet" href="./css/about.css">
 </head>
 
-<body>
-    <header>
+<body id="myBody">
+    <header id="site-header" class="main-header fixed-top nav-fixed">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke">
+                <h2><a href="" class="text-decoration-none navbar-brand position-relative">Farmstead <i
+                            class="fa-solid fa-leaf"></i></a></h2>
+                <div class="navbar ms-lg-auto">
+                    <div class="serch ms-lg-3">
+                        <form action="" method="get">
+                            <input type="search" name="" id="">
+                        </form>
+                    </div>
+                </div>
+                <div class="ms-2">
+                    <button class="btn" id="switchButton" title="Click to switch theme">
+                        <i class="fa-regular fa-moon"></i>
+                        <i class="fa-regular fa-sun"></i>
+                    </button>
+                </div>
+                <ul class="list-unstyled">
+                    <div class="dropdown">
+                        <button class="btn position-absolute" type="button" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end ">
+                            <li><a href="./index.html" class="text-decoration-none">Home</a></li>
+                            <li><a href="./about.html" class="text-decoration-none">About</a></li>
+                            <li><a href="./services.html" class="text-decoration-none">Service</a></li>
+                            <li><a href="./blog_posts.html" class="text-decoration-none">Blog Posts</a></li>
+                            <li><a href="./landing_page.html" class="text-decoration-none">Landing Page</a></li>
+                            <li><a href="./elements_page.html" class="text-decoration-none">Element Page</a></li>
+                            <li><a href="./404.html" class="text-decoration-none">404 Page</a></li>
+                            <li><a href="./contact.html" class="text-decoration-none">Contact</a></li>
+
+                        </ul>
+                    </div>
+                </ul>
+            </nav>
+        </div>
 
     </header>
     <main>
@@ -125,8 +168,21 @@
                     <!-- team1  -->
                     <div class="col-lg-4 col-sm-6">
                         <div class="team_bg">
-                            <div class="team_img">
-                                <img src="./img/about/team1.jpg" alt="" class="img-fluid">
+                            <div class="team_person">
+                                <div class="team_img">
+                                    <img src="./img/about/team1.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="team_overlay">
+                                    <div class="top">
+                                        <h4><a href="" class="text-decoration-none">Meet Me</a></h4>
+                                        <p class="text-white px-2">Lorem ipsum dolor sit amet,Ea consequuntur </p>
+                                    </div>
+                                    <div class="bot_icons">
+                                        <a href=""><i class="fa-brands fa-facebook-f text-white"></i></a>
+                                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                        <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="team_title pt-3">
                                 <h5><a href="" class="text-decoration-none text-black fw-bold">Shona Leer</a></h5>
@@ -137,8 +193,21 @@
                     <!-- team2  -->
                     <div class="col-lg-4 col-sm-6 mt-sm-0 mt-4">
                         <div class="team_bg">
-                            <div class="team_img">
-                                <img src="./img/about/team2.jpg" alt="" class="img-fluid">
+                            <div class="team_person">
+                                <div class="team_img">
+                                    <img src="./img/about/team2.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="team_overlay">
+                                    <div class="top">
+                                        <h4><a href="" class="text-decoration-none">Meet Me</a></h4>
+                                        <p class="text-white px-2">Lorem ipsum dolor sit amet,Ea consequuntur </p>
+                                    </div>
+                                    <div class="bot_icons">
+                                        <a href=""><i class="fa-brands fa-facebook-f text-white"></i></a>
+                                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                        <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="team_title pt-3">
                                 <h5><a href="" class="text-decoration-none text-black fw-bold">Brock Lee</a></h5>
@@ -149,8 +218,21 @@
                     <!-- team3  -->
                     <div class="col-lg-4 col-sm-6 mt-sm-0 mt-4">
                         <div class="team_bg">
-                            <div class="team_img">
-                                <img src="./img/about/team3.jpg" alt="" class="img-fluid">
+                            <div class="team_person">
+                                <div class="team_img">
+                                    <img src="./img/about/team3.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="team_overlay">
+                                    <div class="top">
+                                        <h4><a href="" class="text-decoration-none">Meet Me</a></h4>
+                                        <p class="text-white px-2">Lorem ipsum dolor sit amet,Ea consequuntur </p>
+                                    </div>
+                                    <div class="bot_icons">
+                                        <a href=""><i class="fa-brands fa-facebook-f text-white"></i></a>
+                                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                        <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="team_title pt-3">
                                 <h5><a class="text-decoration-none text-black fw-bold" href="">Maya Didas</a></h5>
@@ -194,41 +276,130 @@
             </div>
             </div>
         </section>
-        <section class="owl_carousel py-5">
+        <section class="AboutPageCover py-5">
             <div class="cusrtomer-layout py-lg-5">
                 <div class="container py-md-5 py-4 AboutPageTestimonials">
-                    <div class="testimonial-row">
-                        <div id="owl-demo2" class="owl-two owl-carousel owl-theme mb-md-3 mb-sm-5 mb-4">
-
-
-                            <div class="item">
-                                <div class="testimonial-content">
-                                    <div class="row testimonial align-items-center">
-                                        <div class="col-md-3 testi-des">
-                                            <a href="#url" class="testi-img">
-                                                <img src="./img/about/testi1.jpg" alt="" class="radius-image img-fluid">
-                                            </a>
-                                            <div class="peopl align-self">
-                                                <h3>
-                                                    Dennis wilson </h3>
-                                                <p class="identity">
-                                                    Customer </p>
+                    <div class="row">
+                        <div id="owl-demo2"
+                            class="owl-two owl-carousel owl-theme mb-md-3 mb-sm-5 mb-4 owl-loaded owl-drag">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage"
+                                    style="transform: translate3d(-1190px, 0px, 0px); transition: all 0.25s ease 0s; width: 3570px;">
+                                    <div class="owl-item" style="width: 1170px; margin-right: 20px;">
+                                        <div class="item">
+                                            <div class="testimonial-content">
+                                                <div class="row testimonial align-items-center">
+                                                    <div class="col-md-3 testi-des">
+                                                        <a href="#url" class="testi-img">
+                                                            <img src="./img/about/testi1.jpg" alt=""
+                                                                class="radius-image img-fluid">
+                                                        </a>
+                                                        <div class="peopl align-self">
+                                                            <h3>
+                                                                Dennis wilson </h3>
+                                                            <p class="identity">
+                                                                Customer </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-9 pl-lg-5 mt-md-0 mt-4 text-md-left">
+                                                        <span class="fa fa-quote-left"></span>
+                                                        <blockquote>
+                                                            <q>Lorem ipsum dolor sit amet int consectetur
+                                                                adipisicing elit. Velita
+                                                                beatae
+                                                                laudantium Quas minima sunt natus tempore, maiores
+                                                                aliquid modi felis
+                                                                sequi optio lacinia id ipsum non velit, culpa.
+                                                                voluptate rem ullam dolore nisi est quasi, doloribus
+                                                                tempora.
+                                                                est elit. Non quae, fugiat ad libero justo sed
+                                                                amet.</q>
+                                                        </blockquote>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-9 pl-lg-5 mt-md-0 mt-4 text-md-left text-center">
-                                            <span class="fa fa-quote-left"></span>
-                                            <blockquote>
-                                                <q>Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita
-                                                    beatae
-                                                    laudantium Quas minima sunt natus tempore, maiores aliquid modi
-                                                    felis
-                                                    sequi optio lacinia id ipsum non velit, culpa.
-                                                    voluptate rem ullam dolore nisi est quasi, doloribus tempora.
-                                                    est elit. Non quae, fugiat ad libero justo sed amet.</q>
-                                            </blockquote>
+                                    </div>
+                                    <div class="owl-item active" style="width: 1170px; margin-right: 20px;">
+                                        <div class="item">
+                                            <div class="testimonial-content">
+                                                <div class="row testimonial align-items-center">
+                                                    <div class="col-md-3 testi-des">
+                                                        <a href="#url" class="testi-img">
+                                                            <img src="./img/about/testi2.jpg" alt=""
+                                                                class="radius-image img-fluid">
+                                                        </a>
+                                                        <div class="peopl align-self">
+                                                            <h3>
+                                                                Dennis wilson </h3>
+                                                            <p class="identity">
+                                                                Customer </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-9 pl-lg-5 mt-md-0 mt-4 text-md-left">
+                                                        <span class="fa fa-quote-left"></span>
+                                                        <blockquote>
+                                                            <q>Lorem ipsum dolor sit amet int consectetur
+                                                                adipisicing elit. Velita
+                                                                beatae
+                                                                laudantium Quas minima sunt natus tempore, maiores
+                                                                aliquid modi felis
+                                                                sequi optio lacinia id ipsum non velit, culpa.
+                                                                voluptate rem ullam dolore nisi est quasi, doloribus
+                                                                tempora.
+                                                                est elit. Non quae, fugiat ad libero justo sed
+                                                                amet.</q>
+                                                        </blockquote>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item" style="width: 1170px; margin-right: 20px;">
+                                        <div class="item">
+                                            <div class="testimonial-content">
+                                                <div class="row testimonial align-items-center">
+                                                    <div class="col-md-3 testi-des">
+                                                        <a href="#url" class="testi-img">
+                                                            <img src="./img/about/testi3.jpg" alt=""
+                                                                class="radius-image img-fluid">
+                                                        </a>
+                                                        <div class="peopl align-self">
+                                                            <h3>
+                                                                Dennis wilson </h3>
+                                                            <p class="identity">
+                                                                Customer </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-9 pl-lg-5 mt-md-0 mt-4 text-md-left">
+                                                        <span class="fa fa-quote-left"></span>
+                                                        <blockquote>
+                                                            <q>Lorem ipsum dolor sit amet int consectetur
+                                                                adipisicing elit. Velita
+                                                                beatae
+                                                                laudantium Quas minima sunt natus tempore, maiores
+                                                                aliquid modi felis
+                                                                sequi optio lacinia id ipsum non velit, culpa.
+                                                                voluptate rem ullam dolore nisi est quasi, doloribus
+                                                                tempora.
+                                                                est elit. Non quae, fugiat ad libero justo sed
+                                                                amet.</q>
+                                                        </blockquote>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="owl-nav disabled"><button type="button" role="presentation"
+                                    class="owl-prev"><span aria-label="Previous"> <span class="fa fa-angle-left"></span>
+                                    </span></button><button type="button" role="presentation" class="owl-next"><span
+                                        aria-label="Next"> <span class="fa fa-angle-right"></span>
+                                    </span></button></div>
+                            <div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button
+                                    role="button" class="owl-dot active"><span></span></button><button role="button"
+                                    class="owl-dot"><span></span></button>
                             </div>
                         </div>
                     </div>
@@ -333,7 +504,6 @@
     <!-- countup js  -->
     <script src="./js/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
     <script src="./js/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.min.js"></script>
-    <script src="/path/to/jquery.waypoints.min.js"></script>
     <script>
         $('.counter').countUp({
             'time': 2000,
@@ -344,7 +514,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
         integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="magnific-popup/jquery.magnific-popup.js"></script>
     <script>$(document).ready(function () {
             $(".popup-with-zoom-anim").magnificPopup({
                 type: "inline",
@@ -363,10 +532,45 @@
             });
         });
     </script>
-    <!-- owl-carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- backtotop  -->
+    <script src="./js/main.js"></script>
+    <script src="./js/util.js"></script>
+    <!-- header  -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!-- dark and light  -->
+    <script>
+
+        document.getElementById("switchButton").onclick = function () {
+            document.getElementById("myBody").classList.toggle("dark");
+        };
+    </script>
+
+    <script src="./js/owl.carousel.js"></script>
     <script>
         $(document).ready(function () {
             $("#owl-demo2").owlCarousel({
@@ -392,9 +596,6 @@
             })
         })
     </script>
-    <!-- backtotop  -->
-    <script src="./js/main.js"></script>
-    <script src="./js/util.js"></script>
 </body>
 
 </html>

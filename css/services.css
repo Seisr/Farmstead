@@ -19,6 +19,121 @@ p {
   color: #707070;
 }
 
+.main-header {
+  background-color: transparent;
+  padding: 0px;
+  transition: all 0.4s ease 0s;
+  height: 90px;
+  display: grid;
+  align-items: center;
+}
+.nav-fixed {
+  padding: 0px;
+  border-bottom: none;
+  z-index: 99 !important;
+  background-color: white;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  height: 70px;
+}
+
+header nav h2 .navbar-brand {
+  font-size: 32px;
+  color: orange;
+  transition: all 0.3s;
+}
+header nav h2 .navbar-brand:hover {
+  color: black;
+}
+header nav h2 a i {
+  position: absolute;
+  top: 0;
+  right: 90px;
+  font-size: 20px;
+}
+header input {
+  background: #fff url(./../img/blog_posts/search.png) no-repeat 10px center;
+  border: 1px solid #eee;
+  padding: 0 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+header input:focus {
+  width: 200px;
+  padding-left: 32px;
+  color: #000;
+  background-color: #fff;
+  cursor: auto;
+  padding-right: 15px;
+  border-color: #eee;
+}
+
+#switchButton {
+  background-color: transparent;
+  border: none;
+}
+#switchButton .fa-sun {
+  display: none;
+  font-size: 25px;
+  color: white;
+}
+#switchButton .fa-moon {
+  display: block;
+  font-size: 25px;
+  color: white;
+}
+.nav-fixed #switchButton .fa-moon {
+  color: black;
+}
+/* Dark Theme*/
+.dark#myBody {
+  background-color: rgb(70, 66, 66);
+}
+.dark #switchButton {
+  background-color: transparent;
+  border: none;
+}
+.dark .nav-fixed #switchButton .fa-sun {
+  color: black;
+}
+.dark #switchButton .fa-sun {
+  display: block;
+  color: white;
+}
+
+.dark #switchButton .fa-moon {
+  display: none;
+}
+header ul button {
+  top: -15px;
+}
+header ul button i {
+  font-size: 30px;
+  color: white;
+}
+header ul li {
+  text-align: center;
+  width: 300px;
+  height: 50px;
+}
+header ul li a {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+header ul li:first-of-type a {
+  color: orange;
+}
+header ul li:hover a {
+  color: orange;
+}
+.nav-fixed .fa-bars {
+  color: black;
+}
+/* carousel css  */
 main .carousel {
   background-image: url(./../img/about/bgcarousel.png);
   background-repeat: no-repeat;
