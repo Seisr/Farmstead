@@ -1,0 +1,708 @@
+/* reset css  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "Volkhov", serif;
+}
+p {
+  font-size: 17px;
+  color: #707070;
+}
+body {
+  scroll-behavior: auto;
+}
+
+.main-header {
+  background-color: transparent;
+  padding: 0px;
+  transition: all 0.4s ease 0s;
+  height: 90px;
+  display: grid;
+  align-items: center;
+}
+.nav-fixed {
+  padding: 0px;
+  border-bottom: none;
+  z-index: 99 !important;
+  background-color: white;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  height: 70px;
+}
+
+header nav h2 .navbar-brand {
+  font-size: 32px;
+  color: orange;
+  transition: all 0.3s;
+}
+header nav h2 .navbar-brand:hover {
+  color: black;
+}
+header nav h2 a i {
+  position: absolute;
+  top: 0;
+  right: 90px;
+  font-size: 20px;
+}
+header input {
+  background: #fff url(./../img/blog_posts/search.png) no-repeat 10px center;
+  border: 1px solid #eee;
+  padding: 0 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+header input:focus {
+  width: 200px;
+  padding-left: 32px;
+  color: #000;
+  background-color: #fff;
+  cursor: auto;
+  padding-right: 15px;
+  border-color: #eee;
+}
+
+#switchButton {
+  background-color: transparent;
+  border: none;
+}
+#switchButton .fa-sun {
+  display: none;
+  font-size: 25px;
+  color: white;
+}
+#switchButton .fa-moon {
+  display: block;
+  font-size: 25px;
+  color: white;
+}
+.nav-fixed #switchButton .fa-moon {
+  color: black;
+}
+/* Dark Theme*/
+.dark#myBody {
+  background-color: rgb(70, 66, 66);
+}
+.dark #switchButton {
+  background-color: transparent;
+  border: none;
+}
+.dark .nav-fixed #switchButton .fa-sun {
+  color: black;
+}
+.dark #switchButton .fa-sun {
+  display: block;
+  color: white;
+}
+
+.dark #switchButton .fa-moon {
+  display: none;
+}
+header ul button {
+  top: -15px;
+}
+header ul button i {
+  font-size: 30px;
+  color: white;
+}
+header ul li {
+  text-align: center;
+  width: 300px;
+  height: 50px;
+}
+header ul li a {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+header ul li:first-of-type a {
+  color: orange;
+}
+header ul li:hover a {
+  color: orange;
+}
+.nav-fixed .fa-bars {
+  color: black;
+}
+
+/* carousel css  */
+main .carousel {
+  background-image: url(./../img/about/bgcarousel.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+.carousel ul {
+  line-height: 1.5;
+  color: #707070;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 15px;
+  text-transform: capitalize;
+  padding: 0;
+}
+.carousel ul a {
+  color: #707070;
+  transition: all 0.3s;
+}
+.carousel ul a:hover {
+  color: orange;
+}
+/* contetn css  */
+.content h5 {
+  color: #fb811e;
+  font-size: 25px;
+}
+.content h4 {
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: 600;
+}
+.content p {
+  font-size: 18px;
+}
+.content .btncss {
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  font-weight: 600;
+  background: #fb811e;
+  border: none;
+  color: #fff;
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+.content .btncss:hover {
+  color: white;
+  background-color: #009f4d;
+}
+
+/* counterup css  */
+
+.counterup .bg_i {
+  background: rgb(0 159 77 / 4%);
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  line-height: 90px;
+  text-align: center;
+  display: inline-block;
+}
+.counterup .numbers {
+  font-size: 50px;
+}
+/* team css  */
+.team {
+  background-color: #009f4d;
+}
+.team .small_title {
+  font-size: 25px;
+}
+.team .mid_title {
+  font-size: 50px;
+  line-height: 60px;
+}
+.team .bg_team {
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  z-index: 0;
+  opacity: 0.14;
+  font-size: 13vw;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+}
+.team .team_content .team_bg {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.team .team_content .team_bg .team_img {
+  position: relative;
+}
+.team .team_content .team_bg .team_img img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+.team .team_content .team_bg .team_person {
+  position: relative;
+}
+.team .team_content .team_title {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 1px;
+  display: block;
+}
+.team .team_content .team_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  background-color: rgb(8 8 8 / 54%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.team .team_content .team_overlay .top {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(-55%);
+  transition: all 0.3s 0.2s;
+  padding: 0 20px;
+}
+.team .team_content .team_overlay .bot_icons {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  transform: translateY(45%);
+  transition: all 0.3s 0.2s;
+  font-size: 35px;
+}
+.team .team_content .team_overlay .bot_icons i {
+  color: white;
+}
+.team .team_person:hover .team_overlay .top {
+  top: 35%;
+}
+.team .team_person .team_overlay a {
+  transition: all 0.3s;
+}
+.team .team_person .team_overlay a:hover {
+  color: orange;
+}
+.team .team_person .team_overlay i {
+  transition: all 0.3s;
+}
+.team .team_person .team_overlay i:hover {
+  color: orange;
+}
+.team .team_person:hover .team_overlay .bot_icons {
+  bottom: 10%;
+}
+.team .team_person:hover .team_overlay,
+.team .team_person:hover .team_overlay .top,
+.team .team_person:hover .team_overlay .bot_icons {
+  opacity: 1;
+}
+.team .team_person {
+  overflow: hidden;
+}
+.team .team_content .team_overlay .bot_icons a {
+  margin: 0 10px;
+  color: #1e272e;
+  font-size: 16px;
+}
+.team .team_content .team_overlay h4 a {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+/* videoopopup css  */
+.videopopup .videopopup_width {
+  max-width: 950px;
+  margin: 0 auto;
+}
+.videopopup .popup .view {
+  right: 0;
+  left: 0;
+  top: calc(50% - 40px);
+}
+.videopopup .popup .bg_icon i {
+  color: orange;
+}
+.videopopup .popup .bg_icon {
+  background: #fff;
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  animation: ripple 1s ease-in-out infinite;
+}
+.videopopup .popup .bg_icon:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+#small-dialog {
+  max-width: 750px;
+  margin: 40px auto;
+  position: relative;
+}
+div#small-dialog iframe {
+  width: 100%;
+  height: 420px;
+  display: block;
+  border-radius: 10px;
+}
+.mfp-close-btn-in .mfp-close {
+  color: #fff;
+}
+.mfp-close,
+.mfp-close:active {
+  top: -40px;
+}
+
+/**
+   * Fade-zoom animation for first dialog
+   */
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.95;
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/* .clients {
+  background-image: url(./../img/about/bg1.jpg);
+  position: relative;
+  background-size: cover;
+  z-index: 1;
+}
+.clients::before {
+  content: "";
+  background: rgb(10 10 10 / 52%);
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+} */
+.AboutPageCover {
+  background: url(./../img/about/bg1.jpg);
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.AboutPageCover::before {
+  content: "";
+  background: rgb(10 10 10 / 52%);
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+  display: block;
+}
+.owl-carousel {
+  width: 100%;
+}
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+}
+.owl-carousel .owl-stage {
+  position: relative;
+  touch-action: manipulation;
+}
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
+  display: none;
+}
+.owl-carousel .owl-item {
+  min-height: 1px;
+  float: left;
+}
+.testimonial-content {
+  max-width: 900px;
+  margin: auto;
+}
+.AboutPageCover .testi-des {
+  text-align: center;
+}
+a.testi-img {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50%;
+}
+.AboutPageCover .testimonial img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.AboutPageCover .testimonial .peopl {
+  margin: 0;
+}
+.AboutPageCover .testimonial .peopl h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 10px 0 5px;
+  color: #fff;
+}
+.AboutPageCover p.identity {
+  color: #fff;
+  font-size: 16px;
+}
+.AboutPageCover span.fa {
+  font-size: 20px;
+  color: #fb811e;
+  font-weight: 600;
+  display: inline-block;
+}
+.fa-quote-left:before {
+  content: "";
+}
+.AboutPageCover blockquote q {
+  font-size: 22px;
+  line-height: 34px;
+  color: #fff;
+  text-indent: 30px;
+  display: block;
+}
+.AboutPageCover .owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 30px;
+  bottom: -90px;
+}
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  background: transparent;
+}
+.AboutPageCover .owl-theme .owl-dots .owl-dot.active span,
+.AboutPageCover .owl-theme .owl-dots .owl-dot:hover span {
+  background: #fb811e;
+  opacity: 1;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  border: none;
+}
+.AboutPageCover span.fa {
+  font-size: 20px;
+  color: #fb811e;
+  font-weight: 600;
+  display: inline-block;
+}
+.AboutPageCover blockquote {
+  margin: 0 0 1rem;
+}
+q::before {
+  content: open-quote;
+}
+q::after {
+  content: close-quote;
+}
+.owl-carousel,
+.owl-carousel .owl-item {
+  position: relative;
+}
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
+  text-align: center;
+}
+.AboutPageCover .owl-dots {
+  position: absolute;
+  left: 0px;
+  right: 0;
+  background: none;
+}
+.w3l-clients-1 .owl-theme .owl-dots .owl-dot span {
+  background: #fff;
+  opacity: 0.3;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 1px;
+  background: #aaa;
+  display: block;
+  transition: opacity 0.2s ease;
+  position: relative;
+  opacity: 0.9;
+  border-radius: 30px;
+}
+#owl-demo2 > div.owl-dots > button {
+  padding: 5px;
+}
+
+/* footer css */
+
+.footer h3 {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.footer a.logo {
+  font-size: 32px;
+  color: orange;
+  padding: 0px;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.footer a.logo i {
+  position: absolute;
+  top: -10px;
+  left: 55px;
+  font-size: 20px;
+}
+.footer a.logo:hover {
+  color: black;
+}
+
+.footer .column-2 p {
+  line-height: 24px;
+}
+.footer .footer-p p a {
+  color: #707070;
+}
+.footer .footer-p p a:hover {
+  color: orange;
+}
+
+.footer p.copy-text a {
+  color: green;
+}
+
+.footer p.copy-text a:hover {
+  color: orange;
+}
+
+.footer .subscribe input[type="email"] {
+  background: #f4f4f4;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  outline: none;
+  width: 80%;
+  border: 1px solid #eee;
+  border-radius: 30px 0px 0px 30px;
+}
+
+.footer .subscribe button {
+  background: #009f4d;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 12px 12px;
+  cursor: pointer;
+  width: 20%;
+  color: #fff;
+  border-radius: 0px 30px 30px 0px;
+}
+
+.footer .subscribe button:hover {
+  opacity: 0.8;
+}
+
+.footer ul.social li,
+.footer ul.jst-link li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.footer ul.social li a {
+  color: green;
+  width: 35px;
+  height: 35px;
+  background: rgb(10 191 83 / 8%);
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  transition: all 0.5s;
+}
+
+.footer ul.social li a:hover {
+  color: orange;
+  background: rgb(255 201 69 / 19%);
+  box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
+}
+
+.footer ul.social li a span {
+  font-size: 15px;
+  line-height: 35px;
+}
+
+/* backtotop  */
+
+.backtotop {
+  background-color: #009f4d;
+  bottom: 50px;
+  right: 50px;
+  z-index: 999;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+}
+.backtotop:hover {
+  opacity: 0.8;
+}
+.backtotop i {
+  color: white;
+}
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
