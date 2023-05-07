@@ -8,14 +8,14 @@
   padding: 0px;
   border-bottom: none;
   z-index: 99 !important;
-  background-color: white;
+  background-color: transparent;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
   height: 70px;
 }
 
 header nav h2 .navbar-brand {
   font-size: 32px;
-  color: orange;
+  color: #fb811e;
   transition: all 0.3s;
 }
 header nav h2 .navbar-brand:hover {
@@ -110,18 +110,52 @@ header ul li a {
 }
 
 header ul li:first-of-type a {
-  color: orange;
+  color: #fb811e;
 }
 header ul li:hover a {
-  color: orange;
+  color: #fb811e;
 }
 .nav-fixed .fa-bars {
   color: black;
 }
 
 main{
-    background-color: #222222;
-    color: #fff;
+    color: #060606;
+}
+
+/* carousel css  */
+main .carousel {
+  background-image: url(./../img/about/bgcarousel.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+.carousel ul {
+  line-height: 1.5;
+  color: #707070;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 15px;
+  text-transform: capitalize;
+  padding: 0;
+}
+.carousel ul a {
+  color: #707070;
+  transition: all 0.3s;
+}
+.carousel ul a:hover {
+  color: #fb811e;
+}
+
+.contact-left h6{
+  font-size: 20px;
+}
+
+.contact-left span{
+  color: #707070;
 }
 
 .contact-right input, textarea {
@@ -168,7 +202,7 @@ textarea:focus{
 
 .contact-left a{
     text-decoration: none;
-    color: #fff;
+    color: #707070;
     transition: all 0.5s;
 }
 
@@ -196,7 +230,7 @@ textarea:focus{
   
   .footer a.logo {
     font-size: 32px;
-    color: orange;
+    color: #fb811e;
     padding: 0px;
     position: relative;
     transition: all 0.5s;
@@ -219,7 +253,7 @@ textarea:focus{
     color: #707070;
   }
   .footer .footer-p p a:hover {
-    color: orange;
+    color: #fb811e;
   }
   
   .footer p.copy-text a {
@@ -227,7 +261,7 @@ textarea:focus{
   }
   
   .footer p.copy-text a:hover {
-    color: orange;
+    color: #fb811e;
   }
   
   .footer .subscribe input[type="email"] {
@@ -276,7 +310,7 @@ textarea:focus{
   }
   
   .footer ul.social li a:hover {
-    color: orange;
+    color: #fb811e;
     background: rgb(255 201 69 / 19%);
     box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
   }
