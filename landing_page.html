@@ -49,45 +49,78 @@
     <link rel="stylesheet" href="./css/landing_page.css" />
   </head>
   <body>
-    <header id="site-header" class="fixed-top nav-fixed">
-      <!-- place navbar here -->
-      <div class="header_content">
-        <div class="container">
-          <!-- <div class="container-fluid"> -->
-          <ul class="nav justify-content-end">
-            <div class="header_icon position-relative">
-              <div class="icon position-absolute">
-                <i class="fa fa-leaf" aria-hidden="true"></i>
-              </div>
+    <header id="site-header" class="main-header fixed-top nav-fixed">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg stroke">
+          <h2>
+            <a
+              href=""
+              class="text-decoration-none navbar-brand position-relative"
+              >Farmstead <i class="fa-solid fa-leaf"></i
+            ></a>
+          </h2>
+          <div class="navbar ms-lg-auto">
+            <div class="serch ms-lg-3">
+              <form action="" method="get">
+                <input type="search" name="" id="" />
+              </form>
             </div>
-            <h3 class="align-items-center" href="#">Farmstead</h3>
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./blog_posts.html">Blog posts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./landing_page.html">Landing page</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./elements_page.html">Element page</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./404.html">404 page</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
+          </div>
+          <div class="ms-2">
+            <button class="btn" id="switchButton" title="Click to switch theme">
+              <i class="fa-regular fa-moon"></i>
+              <i class="fa-regular fa-sun"></i>
+            </button>
+          </div>
+          <ul class="list-unstyled">
+            <div class="dropdown">
+              <button
+                class="btn position-absolute"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a href="./index.html" class="text-decoration-none">Home</a>
+                </li>
+                <li>
+                  <a href="./about.html" class="text-decoration-none">About</a>
+                </li>
+                <li>
+                  <a href="./services.html" class="text-decoration-none"
+                    >Service</a
+                  >
+                </li>
+                <li>
+                  <a href="./blog_posts.html" class="text-decoration-none"
+                    >Blog Posts</a
+                  >
+                </li>
+                <li>
+                  <a href="./landing_page.html" class="text-decoration-none"
+                    >Landing Page</a
+                  >
+                </li>
+                <li>
+                  <a href="./elements_page.html" class="text-decoration-none"
+                    >Element Page</a
+                  >
+                </li>
+                <li>
+                  <a href="./404.html" class="text-decoration-none">404 Page</a>
+                </li>
+                <li>
+                  <a href="./contact.html" class="text-decoration-none"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
           </ul>
-          <!-- </div> -->
-        </div>
+        </nav>
       </div>
     </header>
     <main>
